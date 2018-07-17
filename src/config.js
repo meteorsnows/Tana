@@ -6,6 +6,7 @@ const APP_ICON = path.join(__dirname, '..', 'static', 'tana');
 const APP_NAME = "Tana";
 const APP_DESCRIPTION = package.description;
 const APP_VERSION = package.version;
+const ASPECT_RATIO = 16 / 9;
 const FFMPEG_PATH = ffmpegPath();
 const INITIAL_BOUNDS = {
   width: 560,
@@ -41,6 +42,7 @@ module.exports = {
   APP_ICON,
   APP_NAME,
   APP_VERSION,
+  ASPECT_RATIO,
   FFMPEG_PATH,
   INITIAL_BOUNDS,
   MASK_RADIUS,
