@@ -34,7 +34,7 @@
     "chalk": "^2.4.1",
     "cross-zip": "^2.1.5",
     "dotenv": "^6.0.0",
-    "electron": "^1.8.4",
+    "electron": "https://github.com/castlabs/electron-releases#v1.8.7-hdcp-vmp1010",
     "electron-packager": "^12.0.1",
     "electron-unhandled": "^1.1.0",
     "electron-winstaller": "^2.6.4",

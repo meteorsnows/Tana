@@ -4,23 +4,14 @@ import electron, {
   BrowserWindow,
   globalShortcut,
 } from 'electron';
-// import widevine from 'electron-widevinecdm';
 
 import { createServer } from './server';
 import { windowExists } from './window.utils'
 import * as tray from './tray';
 import * as windowManager from './window.manager';
-// import { MASK_RADIUS } from './config';
 
 let refreshMousePointerId = null;
 let shouldMoveSeeThrough = false;
-
-// Test on MacOS
-// if (process.platform !== 'win32') {
-//   console.log('Loading widevine...');
-//   widevine.load(app);
-// }
-// TODO: Get widevinecdm working on Windows
 
 app.on('ready', () => {
   tray.init();
@@ -62,6 +53,12 @@ app.on('quit', (e) => {
     clearInterval(refreshMousePointerId);
     refreshMousePointerId = null;
   }
+});
+
+app.on('widevine-error', (err) => {
+  app.focus();
+  console.log('Failed to install Widevine components', err.name + ': ' + err.message);
+  process.exit(1);
 });
 
 const toggleMoveSeeThrough = () => {

@@ -23,9 +23,9 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
-"@types/node@^8.0.24":
-  version "8.10.21"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.21.tgz#12b3f2359b27aa05a45d886c8ba1eb8d1a77e285"
+"@types/node@^7.0.18":
+  version "7.0.67"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.67.tgz#3aeacf429e24e08e14d7621039d37b7f53542ecf"
 
 "@webassemblyjs/ast@1.5.13":
   version "1.5.13"
@@ -1914,11 +1914,11 @@ electron-winstaller@^2.6.4:
     lodash.template "^4.2.2"
     temp "^0.8.3"
 
-electron@^1.8.4:
-  version "1.8.7"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-1.8.7.tgz#373c1dc4589d7ab4acd49aff8db4a1c0a6c3bcc1"
+"electron@https://github.com/castlabs/electron-releases#v1.8.7-hdcp-vmp1010":
+  version "1.8.7-hdcp-vmp1010"
+  resolved "https://github.com/castlabs/electron-releases#209e51fb03a76f5e2fc6fc572732f1ddabee31ec"
   dependencies:
-    "@types/node" "^8.0.24"
+    "@types/node" "^7.0.18"
     electron-download "^3.0.1"
     extract-zip "^1.0.3"
 
